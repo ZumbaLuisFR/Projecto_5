@@ -43,11 +43,11 @@ namespace Projecto5 {
 	private: System::Windows::Forms::Label^ label1;
 
 	private: System::Windows::Forms::Label^ label3;
-	private: System::Windows::Forms::Label^ label2;
 
 
-	private: System::Windows::Forms::TextBox^ textBox1;
-	private: System::Windows::Forms::TextBox^ textBox2;
+
+
+
 	private: System::Windows::Forms::Button^ btn_ingreso;
 
 
@@ -76,9 +76,6 @@ namespace Projecto5 {
 			this->linkLabel3 = (gcnew System::Windows::Forms::LinkLabel());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->btn_ingreso = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
@@ -92,7 +89,7 @@ namespace Projecto5 {
 			this->pictureBox1->InitialImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.InitialImage")));
 			this->pictureBox1->Location = System::Drawing::Point(-2, 12);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(453, 405);
+			this->pictureBox1->Size = System::Drawing::Size(453, 364);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -110,14 +107,14 @@ namespace Projecto5 {
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Viner Hand ITC", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Viner Hand ITC", 72, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label1->ForeColor = System::Drawing::Color::Black;
-			this->label1->Location = System::Drawing::Point(449, 53);
+			this->label1->Location = System::Drawing::Point(617, 311);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(163, 48);
+			this->label1->Size = System::Drawing::Size(754, 194);
 			this->label1->TabIndex = 4;
-			this->label1->Text = L"Paciente:";
+			this->label1->Text = L"Bienvenidos";
 			this->label1->Click += gcnew System::EventHandler(this, &mainForm::label1_Click);
 			// 
 			// label3
@@ -128,39 +125,6 @@ namespace Projecto5 {
 			this->label3->Size = System::Drawing::Size(0, 16);
 			this->label3->TabIndex = 6;
 			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Viner Hand ITC", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->label2->Location = System::Drawing::Point(457, 110);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(146, 48);
-			this->label2->TabIndex = 7;
-			this->label2->Text = L"Cedula: ";
-			this->label2->Click += gcnew System::EventHandler(this, &mainForm::label2_Click);
-			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Algerian", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox1->Location = System::Drawing::Point(640, 110);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(233, 43);
-			this->textBox1->TabIndex = 10;
-			// 
-			// textBox2
-			// 
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Algerian", 16.2F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->textBox2->Location = System::Drawing::Point(640, 53);
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(247, 43);
-			this->textBox2->TabIndex = 11;
-			this->textBox2->TextChanged += gcnew System::EventHandler(this, &mainForm::textBox2_TextChanged);
-			// 
 			// btn_ingreso
 			// 
 			this->btn_ingreso->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"btn_ingreso.BackgroundImage")));
@@ -170,7 +134,7 @@ namespace Projecto5 {
 				static_cast<System::Byte>(0)));
 			this->btn_ingreso->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->btn_ingreso->ImageAlign = System::Drawing::ContentAlignment::BottomCenter;
-			this->btn_ingreso->Location = System::Drawing::Point(690, 641);
+			this->btn_ingreso->Location = System::Drawing::Point(798, 665);
 			this->btn_ingreso->Name = L"btn_ingreso";
 			this->btn_ingreso->Size = System::Drawing::Size(231, 133);
 			this->btn_ingreso->TabIndex = 12;
@@ -187,11 +151,8 @@ namespace Projecto5 {
 			this->BackColor = System::Drawing::SystemColors::Control;
 			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->ClientSize = System::Drawing::Size(1593, 889);
+			this->ClientSize = System::Drawing::Size(1807, 896);
 			this->Controls->Add(this->btn_ingreso);
-			this->Controls->Add(this->textBox2);
-			this->Controls->Add(this->textBox1);
-			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->linkLabel3);

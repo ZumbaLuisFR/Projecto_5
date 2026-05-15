@@ -137,12 +137,15 @@
     <ClCompile Include="menuForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dashboardForm.h" />
     <ClInclude Include="mainForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="menuForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="registerForm.h" />
+    <ClInclude Include="UsersManager.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="mainForm.resx">
