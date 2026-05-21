@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="mainForm.cpp" />
     <ClCompile Include="menuForm.cpp" />
+    <ClCompile Include="SopadeMacaco.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dashboardForm.h" />
@@ -145,6 +146,9 @@
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="registerForm.h" />
+    <ClInclude Include="SopadeMacaco.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="UsersManager.h" />
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="menuForm.resx">
       <DependentUpon>menuForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SopadeMacaco.resx">
+      <DependentUpon>SopadeMacaco.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
